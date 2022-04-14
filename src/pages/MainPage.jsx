@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Grid, Button} from "@mui/material";
-import AbsPage from "../components/AbsQuestion";
-import FingersPage from "../components/FingersQuestion";
+import AbsQuestion from "../components/AbsQuestion";
+import FingersQuestion from "../components/FingersQuestion";
 
 const MainPage = () => {
   const [currentPage, setCurrentPage] = useState(true);
@@ -16,7 +16,7 @@ const MainPage = () => {
       sx={{minHeight: "100vh"}}
     >
       <Grid item display="flex" justifyContent="center">
-        {currentPage ? <AbsPage /> : <FingersPage />}
+        {currentPage ? <AbsQuestion /> : <FingersQuestion />}
       </Grid>
       <Grid item display="flex" justifyContent="center">
         <Button
